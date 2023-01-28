@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    max-width: 1253px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 53px;
+}
+
+.logo{
+    width: 98px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 70px;
+}
+
+.nav-items a{
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    color: #777C85;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.nav-items a::before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    transition: 0.3s;
+    transform: scaleX(0);
+    background: #4E5DC0;
+}
+
+.nav-items a:hover::before{
+    transform: scaleX(1);
+}
+
+.nav-items a:hover{
+    color: #4E5DC0;
+}
+
+.project-btn{
+    width: 165px;
+    height: 54px;
+    background: #4E5DC0;
+    border-radius: 5px;
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-left: 28px;
+    padding-top: 14px;
+    transition: all 0.8s ease;
+}
+
+.project-btn:hover{
+    cursor: pointer;
+    background: #ffffff;
+    color: #4E5DC0;
+    border: 1px solid #4E5DC0;
+}
+
+.team-section{
+    padding-top: 131px;
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+.img1{
+    width: 570px;
+    border-radius: 30px;
+    transition: all 3s ease;
+}
+
+.img1:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.team-section-heading{
+    width: fit-content;
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+  
+    color: #16171C;
+    font-stretch: 100;
+    font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;     
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    transition: all 03s ease;
+}
+
+.team-section-heading:hover{
+    cursor: pointer;
+    color: #4E5DC0;
+}
+
+.team-section-para{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 42px;
+}
+
+.founder-section{
+    padding-top: 167px;
+    display: flex;
+    justify-content: start;
+    gap: 174px;
+}
+
+.img2{
+    width: 500px;
+    border-radius: 30px;    
+    transition: all 3s ease;
+}
+
+.img2:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.founder-section-heading{
+    width: fit-content;
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+  
+    color: #16171C;
+    font-stretch: 100;
+    font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;     
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    transition: all 3s ease;
+}
+
+.founder-section-heading:hover{
+    color: #4E5DC0;
+    cursor: pointer;
+}
+
+.founder-section-para{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 42px;
+}
+
+/* footer section */
+.footer-section{
+    margin-top: 121px;
+    border-top: 1.5px solid #E1E2E4;
+    padding-top: 60px;
+    padding-bottom: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-heading{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4E5DC0;
+}
+
+.footer-para{
+    padding-top: 14px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.policy-heading{
+    text-decoration-line: underline;
+}
+
+.footer-logo{
+    width: 98px;
+}
+
+.policy-heading{
+   padding-top: 46px; 
+}
+
+.email-heading{
+    padding-top: 40px;
+}
+
+.footer-menu-items a{
+    text-decoration: none;
+    color: #999999;
+    transition: all 0.8s;
+}
+
+.footer-menu-items a:hover{
+    color: #4E5DC0;
+}
+
+.section-4{
+    display: flex;
+    gap: 8px;
+}
+
+.social-btn{
+    transition: all 0.8s ease;
+}
+
+.social-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* ########################################################################################################## */
+
+@media screen and (max-width: 1200px) {
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 53px;
+        gap: 5vw;
+    }
+
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10vw;
+    }
+
+    .project-btn{       
+        margin-left: 10vw;
+    }
+
+    .team-section{
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        gap: 50px;
+    }
+
+    .founder-section{
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .footer-section{
+        margin-top: 121px;
+        border-top: 1.5px solid #E1E2E4;
+        padding-top: 60px;
+        padding-bottom: 67px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
